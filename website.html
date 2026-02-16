@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admission Form</title>
 </head>
 <body>
@@ -15,30 +16,31 @@
 
 <label>Full Name:</label>
 <input type="text" required maxlength="30">
-<br><br>
+<br>
+<br>
 
 <label>Date of Birth:</label>
 <input type="date" required>
-<br><br>
-
+<br>
+<br>
 <label>Email Address:</label>
 <input type="email" required>
-<br><br>
+<br>
+<br>
 
 </fieldset>
 
 <fieldset>
 <legend>Gender</legend>
-
 <input type="radio" name="gender" required> Male
 <input type="radio" name="gender"> Female
 <input type="radio" name="gender"> Other
 
 </fieldset>
 
+
 <fieldset>
 <legend>Course Selection</legend>
-
 <label>Select Course:</label>
 <select required>
 <option value="">Choose</option>
@@ -46,9 +48,25 @@
 <option>Information Technology</option>
 <option>Electronics</option>
 </select>
+</fieldset>
+
+<fieldset>
+<legend>Skills</legend>
+<input type="checkbox"> HTML
+<input type="checkbox"> CSS
+<input type="checkbox"> JavaScript
 
 </fieldset>
 
+<fieldset>
+<legend>Upload Documents</legend>
+
+<label>Upload Certificate:</label>
+<input type="file" required>
+
+</fieldset>
+
+<br>
 <input type="submit" value="Submit">
 
 </form>
